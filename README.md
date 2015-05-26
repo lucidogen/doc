@@ -3,9 +3,10 @@ Lucy Doc
 
 A Javascript documentation parser based on Lua library [lut.Doc](http://doc.lubyk.org/lut.Doc.html).
 
----------------------------------------------------------------------------------
--- LIBRARY NOT RELEASED YET. TRANSCRIPTION FROM LUA TO JAVASCRIPT IN PROGRESS. --
----------------------------------------------------------------------------------
+---------
+
+LIBRARY NOT RELEASED YET. TRANSCRIPTION FROM LUA TO JAVASCRIPT IN PROGRESS.
+---------------------------------------------------------------------------
 
 The parser supports Latex math, literate programming, object and array content
 documentation and *does not use Javadoc* comments but leaves the user free to
@@ -22,14 +23,14 @@ format documentation in a way that makes the most sense to end users.
 
 ```js
   require('lucy-doc').make({
-    sources: [
-      'foo/DocTest.js',
-      'foo/Other.js',
-      {path:'examples', prepend:'examples/foo'},
-    ],
-    copy: [
-      {path:'examples', prepend: 'examples/foo', filter: /\.(js|png)/},
-    ],
+    sources:
+      [ 'foo/DocTest.js'
+      , 'foo/Other.js'
+      , {path:'examples', prepend:'examples/foo'}
+      ]
+    copy:
+      [ {path:'examples', prepend: 'examples/foo', filter: /\.(js|png)/}
+      ],
     target: 'doc',
     format: 'html',
     header: `
