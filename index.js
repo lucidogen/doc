@@ -356,14 +356,14 @@ const ALLOWED_OPTIONS = {lit = true, loose = true}
 const DEFAULT_HEADER = ' '
 const DEFAULT_FOOTER = " Documentation generated on ${strftime('%Y-%m-%d')} with <a href='http://doc.lucidity.io/lucy.Doc.html'>lucy.Doc</a> "
 // list of files to copy in generated documentation.
-const ASSETS =  {
-  'css/bootstrap.min.css',
-  'css/bootstrap-responsive.min.css',
-  'css/docs.css',
-  'img/glyphicons-halflings-white.png', 
-  'img/glyphicons-halflings.png',
-  'js/bootstrap.min.js',
-}
+const ASSETS = 
+  { 'css/bootstrap.min.css'
+  , 'css/bootstrap-responsive.min.css'
+  , 'css/docs.css'
+  , 'img/glyphicons-halflings-white.png'
+  , 'img/glyphicons-halflings.png'
+  , 'js/bootstrap.min.js'
+  }
 
 // # Constructor
 
